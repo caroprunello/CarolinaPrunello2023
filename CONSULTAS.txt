@@ -1,0 +1,85 @@
+Ejercicio 1 :
+
+SELECT codigo, descripcion, precio FROM Articulos
+
+Ejercicio 2 :
+
+ALTER TABLE Articulos
+ADD stock_minimo int
+
+Ejercicio 3 :
+
+UPDATE Articulos 
+SET precio = 5000
+WHERE codigo = 6
+UPDATE Articulos 
+SET precio = 5000
+WHERE codigo = 7
+UPDATE Articulos 
+SET precio = 5000
+WHERE codigo = 8
+
+
+Ejercicio 4 :
+
+DELETE Articulos
+WHERE precio < 5000
+
+
+Ejercicio 5 :
+
+SELECT * FROM Articulos
+WHERE stock_min < 15
+
+
+Ejercicio 6 :
+
+SELECT * FROM Articulos
+WHERE precio > 35000
+ORDER BY precio ASC
+
+
+Ejercicio 7 :
+
+SELECT * FROM Articulos
+WHERE descripcion like '%mujer%'
+
+
+Ejercicio 8 :
+
+SELECT * FROM Articulos
+WHERE codigo IN (30, 31, 32)
+
+
+Ejercicio 9 : 
+
+SELECT * FROM Articulos
+WHERE descripcion like '%nike hombre%'
+
+Ejercicio 10 : 
+
+SELECT * FROM clientes
+ORDER BY apellido ASC
+
+Ejercicio 11 : 
+
+SELECT * FROM clientes
+WHERE ultima_venta between '2022/1/1' and '2022-12-19'
+
+Ejercicio 12 :
+
+SELECT * FROM clientes
+WHERE ultima_venta between '2023/11/1' and '2023-11-28'
+
+
+Ejercicio 13 :
+
+SELECT * FROM Clientes
+WHERE apellido like 'f%'
+
+
+Ejercicio 14 :
+
+SELECT * FROM Clientes
+WHERE monto_acumulado > 100000
+ORDER BY monto_acumulado ASC
