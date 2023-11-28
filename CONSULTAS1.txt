@@ -1,0 +1,19 @@
+EJERCICIO1:
+
+SELECT * FROM Detalle_Factura, Articulos
+WHERE Articulos.codigo = Detalle_Factura.cantidad
+
+EJERCICIO 2:
+
+SELECT * FROM Detalle_Factura
+WHERE cod_articulo < 10
+
+EJERCICIO 3:
+
+SELECT COUNT ( * ) FROM Detalle_Factura
+
+EJERCICIO 4:
+
+SELECT SUM (cantidad), descripcion FROM Detalle_Factura, Articulos
+WHERE Articulos.codigo = Detalle_Factura.cantidad
+GROUP BY cantidad, descripcion
